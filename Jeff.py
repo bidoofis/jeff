@@ -11,7 +11,7 @@ class Jeff(discord.Client):
         print(f'{self.user} is pissing CORRECTLY!')
 
     async def on_message(self, message):
-        print(f'Message from {message.author}: {message.content}')
+        #print(f'Message from {message.author}: {message.content}')
 
         if "You're welcome :)" in message.content:
             await message.reply("<:mahirobruh:1155998284876353617>") 
