@@ -32,9 +32,9 @@ class Jeff(discord.Client):
 
         # Define categories, choose from list, store level up message, do!!!!!
         if random.random() < chanceLvl:
-            category1 = random.choice(["Mustache Points", "Epicness", "Gamer Skill"])
-            category2 = random.choice(["Hours of Anime Watched", "Backflips accomplished", "Toes collected"])
-            category3 = random.choice(["Embarassment points", "Persona slots gained", "Bogos binted"])
+            category1 = random.choice(["Mustache Points", "Epicness", "Gamer Skill", "Ls recieved"])
+            category2 = random.choice(["Hours of Anime Watched", "Backflips accomplished", "Toes collected","Tweets ratio'd"])
+            category3 = random.choice(["Embarassment points", "Persona slots gained", "Bogos binted", "is a number"])
             randomNum1 = int(random.random() * 100 * (1 if random.random() < 0.8 else -1))
             randomNum2 = int(random.random() * 100 * (1 if random.random() < 0.8 else -1))
             randomNum3 = int(random.random() * 100 * (1 if random.random() < 0.8 else -1))
