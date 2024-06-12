@@ -28,12 +28,12 @@ class Jeff(discord.Client):
             await message.channel.send("The liberals would not approve of this.")
 
         # Second verse same as the first
-        chanceLvl = 0.006667 
+        chanceLvl = 0.003333
 
         # Define categories, choose from list, store level up message, do!!!!!
         if random.random() < chanceLvl:
             category1 = random.choice(["Mustache Points", "Epicness", "Gamer Skill", "Ls recieved"])
-            category2 = random.choice(["Hours of Anime Watched", "Backflips accomplished", "Toes collected","Tweets ratio'd"])
+            category2 = random.choice(["Hours of Anime Watched", "Backflips accomplished", "Toes collected","Tweets ratio'd", "BKZ twitter accounts reported"])
             category3 = random.choice(["Embarassment points", "Persona slots gained", "Bogos binted", "is a number"])
             randomNum1 = int(random.random() * 100 * (1 if random.random() < 0.8 else -1))
             randomNum2 = int(random.random() * 100 * (1 if random.random() < 0.8 else -1))
@@ -46,30 +46,38 @@ class Jeff(discord.Client):
         # If you send 'pee pee' you are gross!!! EWWWWWW!!!!
         if "pee pee" in message.content:
             await message.channel.send("Gross! GRODY!!! ERM, DO YOU HAVE COOTIES OR SMTH?? idk i'm making this up")
+            return
         
         if "mahirobot, what are you" in message.content.lower():
             await message.channel.send("I'm glad you asked!\nMahiroBot is a discord bot. Hope this helps!")
+            return
 
         if "false" in message.content.lower():
             async with message.channel.typing():
                 await asyncio.sleep(9)
                 await message.channel.send("Hey, just noticed that you said something was false! Sadly, I have to inform you that the thing in question that you said was false was actually true. Please reflect on your actions, and come back with better facts.")
+                return
 
         if "halloween" in message.content.lower():
             await message.channel.send("https://cdn.discordapp.com/attachments/1153004175077150752/1158063483007533067/rawr.png?ex=651ae22a&is=651990aa&hm=ad45827a791597d1366d07ed8a4f6d4320d94f1829f1566db1dcddf4c5416df4&")
+            return
 
         if "banana" in message.content.lower():
             await message.channel.send("<:yooo:1153062892099358861>🍌")
+            return
 
         if "chicken nug" in message.content.lower():
             await message.channel.send("<a:ChickenNugEat:1153192868136103966> <a:MahiroEat:1153195991399411732>")
+            return
 
         # Do not kys ;(
         if "kys" in message.content:
             await message.reply("Not very poggers of you. MODERATOR!!!!! BAN THIS MAN PLEASE!")
+            return
 
         if "proof" in message.content.lower():
             await message.reply("It's in the pudding.")
+            return
         
 
     # This shit not bussin' bussin' on god fr
